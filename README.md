@@ -1,17 +1,6 @@
-# Smart Pricing — Our solution (implementation README)
+# Smart Pricing — Our Approach
 
-This README describes the solution implemented in `src/Final.py` for the Smart Product Pricing challenge (project PDF: `Amazon_ML.pdf`). It documents the approach, how to run the pipeline, important implementation details, and assumptions.
-
-Keep in mind: `src/Final.py` is an end-to-end prototype combining text, numeric and visual features and training an ensemble of tree-based models. The script includes many configurable fallbacks to allow iteration on machines without GPUs or full image sets.
-
-## Project layout (relevant files)
-
-- `src/Final.py` — End-to-end pipeline used for our solution (text + visual feature extraction, feature fusion, LightGBM/XGBoost training, prediction and submission export).
-- `src/utils.py` — helper functions for downloading images (`download_images`) used if you want to collect images locally.
-- `sample_code.py` — tiny example showing how to generate a submission CSV (format reference).
-- `dataset/` — dataset files (training and test CSVs and sample outputs).
-
-## Solution overview (high-level)
+## overview (high-level)
 
 Inputs: `catalog_content` (text), `image_link` (optional), `sample_id`.
 
